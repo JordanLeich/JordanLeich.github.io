@@ -1,0 +1,28 @@
+/* Responsive design for navbar using media queries */
+@media screen and (max-width: 768px) {
+  header nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  header nav ul.active {
+    display: flex;
+  }
+}
+
+/* Styling with CSS pseudo-classes */
+nav ul li a:hover {
+  color: #ff5733; /* Change the color on hover */
+}
+
+/* Apply one of the provided layout templates */
+body {
+  background-color: #f0f0f0;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}

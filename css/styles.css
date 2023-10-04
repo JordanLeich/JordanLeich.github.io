@@ -1,3 +1,56 @@
+/* Add styles for the left section */
+.left-section {
+  float: left;
+  width: 60%;
+}
+
+/* Styling for the right section */
+.right-section {
+  float: right;
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Styling for the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #757575;
+  color: white;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+  font-size: larger;
+}
+
+/* Styling for the footer */
+footer {
+  clear: both; /* Clear floats */
+  text-align: center;
+  background-color: #757575;
+  color: white;
+  padding: 10px;
+}
+
 /* Responsive design for navbar using media queries */
 @media screen and (max-width: 768px) {
   header nav ul {

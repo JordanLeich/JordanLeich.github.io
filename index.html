@@ -5,17 +5,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jordan Leich's Portfolio</title>
-    <!-- Favicon (icon in the browser tab) -->
+    <!-- Favicon -->
     <link rel="icon" href="img/icon.ico" type="image/x-icon" />
 
-    <!-- Add CSS stylesheets -->
+    <!-- Add CSS stylesheet -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <!-- Header section containing the site title and navigation -->
-      <h1>Jordan Leich's Portfolio</h1>
-      <nav>
+      <div class="header-left">
+        <img
+          src="img/icon.png"
+          width="100"
+          height="100"
+          alt="Me, Jordan Leich Logo"
+        />
+        <h1>Jordan Leich's Portfolio</h1>
+      </div>
+      <nav class="header-right">
         <ul>
           <!-- Navigation menu -->
           <li><a href="index.html">Home</a></li>
@@ -26,17 +34,7 @@
     </header>
 
     <main>
-      <section>
-        <!-- Main content section -->
-        <figure>
-          <img src="img/icon.png" width="150" height="150" alt="Jordan Leich" />
-          <figcaption>
-            <blockquote>
-              <!-- Quotation -->
-              "You only live once, but if you do it right, once is enough."
-            </blockquote>
-          </figcaption>
-        </figure>
+      <section class="left-section">
         <p>
           <!-- Introduction paragraph -->
           Hello, my name is Jordan Leich, and this is my portfolio website. I'm
@@ -53,9 +51,8 @@
           <a href="html/my_resume.html">Resume</a> or
           <a href="html/my_fun_facts.html">About Me</a> pages.
         </p>
-      </section>
+        <button>Some Button</button>
 
-      <section>
         <!-- Degree progress section -->
         <h2>Degree Progress</h2>
         <progress max="128" value="102"></progress>
@@ -64,6 +61,11 @@
           Completed 102 out of 128 credits towards Information Technology B.S.
           degree.
         </p>
+      </section>
+
+      <section class="right-section">
+        <!-- Content for the right section -->
+        <img src="img/book_cover.jpg" alt="Outsider's Book Cover" />
       </section>
     </main>
 

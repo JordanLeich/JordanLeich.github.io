@@ -51,17 +51,6 @@ footer {
   padding: 10px;
 }
 
-/* Responsive design for navbar using media queries */
-@media screen and (max-width: 768px) {
-  header nav ul {
-    display: none;
-    flex-direction: column;
-  }
-  header nav ul.active {
-    display: flex;
-  }
-}
-
 /* Styling with CSS pseudo-classes */
 nav ul li a:hover {
   color: #ff5733; /* Change the color on hover */
@@ -78,4 +67,17 @@ section {
   margin: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+}
+
+/* Responsive design for navbar using media queries */
+@media screen and (max-width: 768px) {
+  /* Display the navigation menu for smaller screens */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-right: 0; /* Remove margin for list items */
+    margin-bottom: 10px; /* Add spacing between list items */
+  }
 }

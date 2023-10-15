@@ -1,83 +1,151 @@
-/* Add styles for the left section */
-.left-section {
-  float: left;
-  width: 60%;
-}
-
-/* Styling for the right section */
-.right-section {
-  float: right;
-  width: 30%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.right-section img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Styling for the header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #757575;
-  color: white;
-}
-
-/* Style the navigation menu */
-nav ul {
-  list-style-type: none;
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 
+/* Define a background image for the whole page */
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: gray;
+  font-family: Arial, sans-serif;
+}
+
+#header {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-image: url("../img/alaska1.jpg"); /* Add your header background image */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 250px 0;
+}
+
+.header-content {
+  display: inline-block;
+  padding: 20px;
+}
+
+.header-title {
+  font-size: 8em;
+  color: yellow;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 2em;
+  color: #fff;
+  margin: 0;
+}
+
+#about {
+  background-image: url("../img/alaska2.jpg"); /* Add your background image */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 250px;
+}
+
+.about-header {
+  flex: 1;
+  text-align: left;
+}
+
+.about-header h1 {
+  font-size: 2.5em; /* Adjust the size as needed */
+  color: yellow;
+}
+
+.about-content {
+  flex: 1;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 1.2em; /* Adjust the size as needed */
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
 nav ul li {
   display: inline;
-  margin-right: 10px;
-  font-size: larger;
+  margin-right: 20px;
 }
 
-/* Styling for the footer */
-footer {
-  clear: both; /* Clear floats */
-  text-align: center;
-  background-color: #757575;
-  color: white;
-  padding: 10px;
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
-/* Styling with CSS pseudo-classes */
-nav ul li a:hover {
-  color: #ff5733; /* Change the color on hover */
-}
-
-/* Apply one of the provided layout templates */
-body {
-  background-color: #f0f0f0;
-}
-
+/* Style the content sections */
 section {
-  background-color: #fff;
   padding: 20px;
-  margin: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
 }
 
-/* Responsive design for navbar using media queries */
-@media screen and (max-width: 768px) {
-  /* Display the navigation menu for smaller screens */
-  nav ul {
-    display: flex;
-    flex-direction: column;
-  }
-  nav ul li {
-    margin-right: 0; /* Remove margin for list items */
-    margin-bottom: 10px; /* Add spacing between list items */
-  }
+h1,
+h2,
+h3 {
+  color: yellow;
+}
+
+p {
+  color: white;
+}
+
+/* Style the social media icons */
+.social-icons {
+  list-style-type: none;
+}
+
+.social-icons li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Add styles for the dropdown arrow */
+.dropdown-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.arrow-icon {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid yellow;
+  cursor: pointer;
+}
+
+/* Smooth scrolling effect for the anchor link */
+html {
+  scroll-behavior: smooth;
 }

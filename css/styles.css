@@ -154,3 +154,23 @@ p {
 html {
   scroll-behavior: smooth;
 }
+
+@media screen and (max-width: 768px) {
+  /* Add your mobile styles here */
+  body {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  #header {
+    padding: 100px 0; /* Adjust header padding */
+  }
+  .header-content {
+    padding: 10px; /* Adjust header content padding */
+  }
+  .header-title {
+    font-size: 3em; /* Adjust font size for smaller screens */
+  }
+  .header-subtitle {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+  /* Continue with other styles as needed */
+}

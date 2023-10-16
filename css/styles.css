@@ -1,4 +1,8 @@
-/* Reset some default browser styles */
+@font-face {
+  font-family: "YoungSerif";
+  src: url("../font/YoungSerif-Regular.ttf") format("woff2");
+}
+
 body,
 h1,
 h2,
@@ -12,10 +16,10 @@ li {
 
 /* Define a background image for the whole page */
 body {
+  font-family: "YoungSerif";
   background-size: cover;
   background-repeat: no-repeat;
   background-color: gray;
-  font-family: Arial, sans-serif;
 }
 
 #header {
@@ -69,7 +73,7 @@ body {
 }
 
 .about-header h1 {
-  font-size: 2.5em; /* Adjust the size as needed */
+  font-size: 5em; /* Adjust the size as needed */
   color: yellow;
 }
 
@@ -79,8 +83,9 @@ body {
 }
 
 .about-content p {
-  font-size: 1.2em; /* Adjust the size as needed */
-  color: #fff;
+  font-size: 1.5em; /* Adjust the size as needed */
+  color: #fff; /* Text color */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 nav ul {

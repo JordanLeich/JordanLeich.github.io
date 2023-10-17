@@ -205,7 +205,7 @@ h2 {
   font-size: 18px;
   border: none;
   border-radius: 5px;
-  margin: 20px auto; /* Center the button horizontally and add margin for spacing */
+  margin: 20px auto;
   cursor: pointer;
 }
 

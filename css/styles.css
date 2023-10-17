@@ -209,6 +209,37 @@ h2 {
   cursor: pointer;
 }
 
+#anchorage {
+  background-image: url("../img/house1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px;
+  display: flex;
+}
+
+#anchorage h2 {
+  font-size: 70px;
+  text-align: left;
+  color: yellow;
+  flex: 1;
+}
+
+#anchorage .content {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+#anchorage h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#anchorage p {
+  font-size: 18px;
+  text-align: right;
+}
+
 @media screen and (max-width: 768px) {
   body {
     padding: 10px; /* Adjust padding for smaller screens */
@@ -252,5 +283,23 @@ h2 {
     border-left: 10px solid transparent; /* Adjust the arrow size */
     border-right: 10px solid transparent;
     border-top: 10px solid yellow;
+  }
+  #anchorage {
+    padding: 20px; /* Adjust padding for the "anchorage" section */
+  }
+  #anchorage h2 {
+    font-size: 3em; /* Adjust font size for smaller screens */
+    text-align: center; /* Center align the h2 text */
+  }
+  #anchorage .content {
+    padding: 10px; /* Adjust content padding */
+  }
+  #anchorage h3 {
+    font-size: 1.5em; /* Adjust font size for "anchorage" h3 */
+    text-align: center; /* Center align the h3 text */
+  }
+  #anchorage p {
+    font-size: 1em; /* Adjust font size for "anchorage" p text */
+    text-align: center; /* Center align the p text */
   }
 }

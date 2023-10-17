@@ -1,6 +1,6 @@
 @font-face {
   font-family: "YoungSerif";
-  src: url("../font/YoungSerif-Regular.ttf") format("woff2");
+  src: url("../font/YoungSerif-Regular.ttf"); /* Custom font */
 }
 
 body,
@@ -14,7 +14,6 @@ li {
   padding: 0;
 }
 
-/* Define a background image for the whole page */
 body {
   font-family: "YoungSerif";
   background-size: cover;
@@ -26,7 +25,7 @@ body {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  background-image: url("../img/alaska4.jpg"); /* Add your header background image */
+  background-image: url("../img/alaska4.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -73,7 +72,7 @@ body {
 }
 
 .about-header h1 {
-  font-size: 5em; /* Adjust the size as needed */
+  font-size: 5em;
   color: yellow;
 }
 
@@ -117,7 +116,6 @@ p {
   color: white;
 }
 
-/* Style the social media icons */
 .social-icons {
   list-style-type: none;
 }
@@ -132,7 +130,6 @@ p {
   height: 40px;
 }
 
-/* Add styles for the dropdown arrow */
 .dropdown-arrow {
   display: flex;
   flex-direction: column;
@@ -230,7 +227,7 @@ h2 {
 
 #anchorage h3 {
   font-size: 30px;
-  text-align: center;
+  text-align: right;
 }
 
 #anchorage p {
@@ -238,18 +235,130 @@ h2 {
   text-align: right;
 }
 
+.feature-section {
+  background-image: url("../img/alaska7.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 400px 0;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+  padding: 20px;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.yellow-header {
+  color: yellow;
+  font-size: 80px;
+}
+
+.white-paragraph {
+  color: white;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.customer-review-section {
+  background-image: url("../img/alaska5.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 250px;
+  text-align: center;
+  color: white;
+}
+
+.customer-review-content {
+  padding: 20px;
+}
+
+.customer-logo {
+  max-width: 200px;
+}
+
+.review-paragraph {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.customer-name {
+  font-size: 22px;
+}
+
+.dropdown-arrow {
+  margin-top: 20px;
+}
+
+.dropdown-arrow a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.contact-section {
+  display: flex;
+  background-image: url("../img/alaska6.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 300px;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 200px;
+  color: white;
+}
+
+.header-text {
+  font-size: 50px;
+}
+
+.paragraph-text {
+  font-size: 20px;
+}
+
+.yellow-button {
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 @media screen and (max-width: 768px) {
   body {
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px;
   }
   #header {
-    padding: 100px 0; /* Adjust header padding */
+    padding: 100px 0;
   }
   .header-content {
-    padding: 10px; /* Adjust header content padding */
+    padding: 10px;
   }
   .header-title {
-    font-size: 3em; /* Adjust font size for smaller screens */
+    font-size: 3em; /* Adjust font size */
   }
   .header-subtitle {
     font-size: 1.5em;
@@ -258,46 +367,107 @@ h2 {
     padding: 30px 0; /* Adjust padding for the "about" section */
   }
   .about-container {
-    flex-direction: column; /* Stack content vertically on smaller screens */
-    padding: 20px; /* Adjust container padding */
+    flex-direction: column;
+    padding: 20px;
   }
   .about-header h1 {
-    font-size: 3em; /* Adjust the "about" header font size for smaller screens */
+    font-size: 3em;
   }
   .about-content p {
     font-size: 1.2em; /* Adjust font size for "about" content */
   }
   nav ul {
-    flex-direction: column; /* Stack navigation vertically for smaller screens */
+    flex-direction: column;
   }
   nav ul li {
-    margin-right: 0; /* Remove right margin between navigation items */
-    margin-bottom: 10px; /* Add some spacing between navigation items */
+    margin-right: 0;
+    margin-bottom: 10px;
   }
   .social-icons li {
-    margin-right: 5px; /* Reduce space between social icons */
+    margin-right: 5px;
   }
   .arrow-icon {
-    border-left: 10px solid transparent; /* Adjust the arrow size */
+    border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid yellow;
   }
   #anchorage {
-    padding: 20px; /* Adjust padding for the "anchorage" section */
+    padding: 40px;
   }
   #anchorage h2 {
-    font-size: 3em; /* Adjust font size for smaller screens */
-    text-align: center; /* Center align the h2 text */
+    font-size: 1.5em;
+    text-align: center;
   }
   #anchorage .content {
-    padding: 10px; /* Adjust content padding */
+    padding: 10px;
   }
   #anchorage h3 {
-    font-size: 1.5em; /* Adjust font size for "anchorage" h3 */
+    font-size: 1em; /* Adjust font size for "anchorage" h3 */
     text-align: center; /* Center align the h3 text */
   }
   #anchorage p {
-    font-size: 1em; /* Adjust font size for "anchorage" p text */
+    font-size: 0.5em; /* Adjust font size for "anchorage" p text */
     text-align: center; /* Center align the p text */
+  }
+  .feature-section {
+    padding: 200px 0;
+  }
+  .feature-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature {
+    width: 50%;
+    margin: 10px 0;
+  }
+  .circle {
+    width: 200px; /* Reduce the circle size */
+    height: 200px;
+  }
+  .yellow-header {
+    font-size: 50px; /* Decrease font size */
+  }
+  .white-paragraph {
+    font-size: 15px; /* Decrease font size */
+  }
+  .customer-review-section {
+    padding: 100px;
+  }
+  .customer-review-content {
+    padding: 10px;
+  }
+  .customer-logo {
+    max-width: 100px;
+  }
+  .review-paragraph {
+    font-size: 12px; /* Adjust font size */
+  }
+  .customer-name {
+    font-size: 14px; /* Adjust font size */
+  }
+  .dropdown-arrow {
+    margin-top: 10px;
+  }
+  .contact-section {
+    padding: 25px;
+  }
+  .contact-info {
+    padding: 5px;
+  }
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  .contact-form {
+    padding: 5px;
+  }
+  .header-text {
+    font-size: 20px; /* Decrease font size */
+  }
+  .paragraph-text {
+    font-size: 15px; /* Decrease font size */
+  }
+  .yellow-button {
+    font-size: 10px; /* Decrease font size */
   }
 }

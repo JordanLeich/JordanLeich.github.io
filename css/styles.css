@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  background-image: url("../img/alaska1.jpg"); /* Add your header background image */
+  background-image: url("../img/alaska4.jpg"); /* Add your header background image */
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -51,7 +51,7 @@ body {
 }
 
 #about {
-  background-image: url("../img/alaska2.jpg");
+  background-image: url("../img/alaska3.jpg");
   background-size: cover;
   background-position: center;
   padding: 50px 0;
@@ -84,8 +84,7 @@ body {
 
 .about-content p {
   font-size: 1.5em;
-  color: #fff; /* Text color */
-  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 
 nav ul {
@@ -210,7 +209,7 @@ h2 {
 }
 
 #anchorage {
-  background-image: url("../img/house1.jpg");
+  background-image: url("../img/alaska1.jpg");
   background-size: cover;
   background-position: center;
   padding: 200px;
@@ -226,7 +225,6 @@ h2 {
 
 #anchorage .content {
   flex: 1;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 30px;
 }
 

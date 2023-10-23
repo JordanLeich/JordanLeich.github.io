@@ -1,0 +1,60 @@
+/* Reset and body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Filter container styles */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+/* Label styles */
+.filters label {
+  min-width: 100px;
+  text-align: right;
+}
+
+/* Input and select styles */
+.filters input,
+.filters select {
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Car listings container styles */
+.car-listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Car card styles */
+.car-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Button styles */
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

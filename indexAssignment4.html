@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/stylesAssignment4.css" />
+    <title>Used Car Sales</title>
+  </head>
+  <body>
+    <header>
+      <h1>Used Car Sales</h1>
+    </header>
+    <main>
+      <div class="filters">
+        <fieldset>
+          <legend>Year Range</legend>
+          <label for="min-year">Min. Year:</label>
+          <input type="number" id="min-year" placeholder="e.g., 2005" />
+          <label for="max-year">Max. Year:</label>
+          <input type="number" id="max-year" placeholder="e.g., 2012" />
+        </fieldset>
+        <fieldset>
+          <legend>Make</legend>
+          <select id="make" multiple>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <!-- Add more make options here -->
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Mileage Range</legend>
+          <label for="max-mileage">Max. Mileage:</label>
+          <input type="number" id="max-mileage" placeholder="e.g., 15000" />
+        </fieldset>
+        <fieldset>
+          <legend>Price Range</legend>
+          <label for="min-price">Min. Price:</label>
+          <input type="number" id="min-price" placeholder="e.g., 5000" />
+          <label for="max-price">Max. Price:</label>
+          <input type="number" id="max-price" placeholder="e.g., 25000" />
+        </fieldset>
+        <fieldset>
+          <legend>Color</legend>
+          <select id="color" multiple>
+            <option value="Silver">Silver</option>
+            <option value="White">White</option>
+            <!-- Add more color options here -->
+          </select>
+        </fieldset>
+        <button id="filter-button">Filter</button>
+      </div>
+      <div class="car-listings" id="car-listings">
+        <!-- Car listings will be displayed here -->
+      </div>
+    </main>
+    <footer></footer>
+    <script src="js/carSearch.js"></script>
+  </body>
+</html>

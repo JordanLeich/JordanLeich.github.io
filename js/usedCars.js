@@ -44,7 +44,6 @@ const usedCars = [
     color: "Red",
     gasMileage: "25 mpg city, 37 mpg highway",
   },
-  // Additional entries:
   {
     year: 2016,
     make: "Volkswagen",
@@ -90,7 +89,6 @@ const usedCars = [
     color: "White",
     gasMileage: "22 mpg city, 29 mpg highway",
   },
-  // Five more entries:
   {
     year: 2015,
     make: "Dodge",
